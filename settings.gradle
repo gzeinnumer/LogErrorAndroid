@@ -1,2 +1,3 @@
+include ':lea'
 include ':app'
 rootProject.name = "Log Error Android"
