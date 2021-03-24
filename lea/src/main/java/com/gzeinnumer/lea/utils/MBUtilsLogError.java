@@ -41,10 +41,9 @@ public class MBUtilsLogError {
         }
 
         if (isExternalStorageWritable()) {
-
             File appDirectory = new File(Environment.getExternalStorageDirectory() + appName);
             File logDirectory = new File(appDirectory + logLocation);
-            String fileName = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
+            String fileName = new SimpleDateFormat("yyyy-MM-dd_HH:mm:ss.SSS").format(new Date());
             File logFile = new File(logDirectory, "logcat_" + fileName + ".txt");
 
             // create app folder
